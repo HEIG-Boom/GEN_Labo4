@@ -1,7 +1,7 @@
 package ch.heigvd.gen.labo4;
 
 public class Product {
-    public static final int SIZE_NOT_APPLICABLE = -1;
+    private static final int SIZE_NOT_APPLICABLE = -1;
     private String code;
     private int color;
     private int size;
@@ -14,6 +14,10 @@ public class Product {
         this.size = size;
         this.price = price;
         this.currency = currency;
+    }
+
+    public static int getSizeNotApplicable() {
+        return SIZE_NOT_APPLICABLE;
     }
 
     public String getCode() {
