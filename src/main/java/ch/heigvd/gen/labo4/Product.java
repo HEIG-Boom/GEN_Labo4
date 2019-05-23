@@ -1,14 +1,16 @@
 package ch.heigvd.gen.labo4;
 
+import ch.heigvd.gen.labo4.color.Color;
+
 public class Product {
     private static final int SIZE_NOT_APPLICABLE = -1;
     private String code;
-    private int color;
+    private Color color;
     private int size;
     private double price;
     private String currency;
 
-    public Product(String code, int color, int size, double price, String currency) {
+    public Product(String code, Color color, int size, double price, String currency) {
         this.code = code;
         this.color = color;
         this.size = size;
@@ -24,7 +26,7 @@ public class Product {
         return code;
     }
 
-    public int getColor() {
+    public Color getColor() {
         return color;
     }
 
@@ -60,15 +62,6 @@ public class Product {
     }
 
     String getColorFor() {
-        switch (getColor()) {
-            case 1:
-                return "blue";
-            case 2:
-                return "red";
-            case 3:
-                return "yellow";
-            default:
-                return "no color";
-        }
+        return color.toString();
     }
 }
