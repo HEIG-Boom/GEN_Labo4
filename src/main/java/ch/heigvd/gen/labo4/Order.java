@@ -27,15 +27,16 @@ public class Order {
         products.add(product);
     }
 
-    void buildOrdersName(StringBuffer sb) {
+    @Override
+    public String toString() {
+        StringBuffer sb = new StringBuffer();
         sb.append("{");
         sb.append("\"id\": ");
         sb.append(getOrderId());
         sb.append(", ");
         sb.append("\"products\": [");
         for (int j = 0; j < getProductsCount(); j++) {
-            Product product = getProduct(j);
-            product.getProductContent(sb);
+            sb.append(getProduct(j));
         }
 
         if (getProductsCount() > 0) {
@@ -44,5 +45,6 @@ public class Order {
 
         sb.append("]");
         sb.append("}, ");
+        return sb.toString();
     }
 }

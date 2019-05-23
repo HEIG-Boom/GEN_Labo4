@@ -41,7 +41,9 @@ public class Product {
         return color.toString();
     }
 
-    public void getProductContent(StringBuffer sb) {
+    @Override
+    public String toString() {
+        StringBuffer sb = new StringBuffer();
         sb.append("{");
         sb.append("\"code\": \"");
         sb.append(getCode());
@@ -63,5 +65,6 @@ public class Product {
         sb.append("\"currency\": \"");
         sb.append(getCurrency());
         sb.append("\"}, ");
+        return sb.toString();
     }
 }
