@@ -63,4 +63,5 @@ public class OrdersWriter {
         sb.append(product.getCurrency());
         sb.append("\"}, ");
     }
+
 }
