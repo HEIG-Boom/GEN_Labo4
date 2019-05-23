@@ -26,10 +26,6 @@ public class Product {
         return code;
     }
 
-    public Color getColor() {
-        return color;
-    }
-
     public int getSize() {
         return size;
     }
@@ -61,7 +57,7 @@ public class Product {
         }
     }
 
-    String getColorFor() {
+    String getColor() {
         return color.toString();
     }
 }
