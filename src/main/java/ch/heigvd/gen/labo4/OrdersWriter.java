@@ -21,5 +21,4 @@ public class OrdersWriter {
 
         return sb.append("]}").toString();
     }
-
 }
