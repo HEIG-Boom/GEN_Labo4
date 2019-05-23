@@ -61,27 +61,17 @@ public class Product {
         return color.toString();
     }
 
-<<<<<<< HEAD
-    void getProductContent(StringBuffer sb) {
-=======
     public void getProductContent(StringBuffer sb) {
->>>>>>> 0596d2fc1a98c2f864b7f006c3d87e38b4065fcf
         sb.append("{");
         sb.append("\"code\": \"");
         sb.append(getCode());
         sb.append("\", ");
         sb.append("\"color\": \"");
-<<<<<<< HEAD
-        sb.append(getColorFor());
-        sb.append("\", ");
 
-        if (getSize() != getSizeNotApplicable()) {
-=======
         sb.append(getColor());
         sb.append("\", ");
 
         if (getSize() != Product.getSizeNotApplicable()) {
->>>>>>> 0596d2fc1a98c2f864b7f006c3d87e38b4065fcf
             sb.append("\"size\": \"");
             sb.append(getSizeFor());
             sb.append("\", ");
