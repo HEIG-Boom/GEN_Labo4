@@ -3,7 +3,6 @@ package ch.heigvd.gen.labo4;
 import ch.heigvd.gen.labo4.color.Color;
 
 public class Product {
-    private static final int SIZE_NOT_APPLICABLE = -1;
     private String code;
     private Color color;
     private Size size;
@@ -16,10 +15,6 @@ public class Product {
         this.size = size;
         this.price = price;
         this.currency = currency;
-    }
-
-    public static int getSizeNotApplicable() {
-        return SIZE_NOT_APPLICABLE;
     }
 
     public String getCode() {
